@@ -1,5 +1,5 @@
 ---
-title: Welcome to Quartz
+title: Welcome to ИСП23А гайды
 ---
 
 This is a blank Quartz installation.
