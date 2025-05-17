@@ -34,13 +34,11 @@ jobs:
       - name: Build Quartz
         run: npx quartz build
 
-      - name: Dummy upload to preload action (optional)
-        uses: actions/upload-artifact@v2
+      - name: Upload artifact for GitHub Pages
+        uses: actions/upload-pages-artifact@v2
         with:
-          name: dummy
-          path: ./public/index.html
-        continue-on-error: true
-
+          path: public
+        
       - name: Upload artifact for GitHub Pages
         uses: actions/upload-pages-artifact@v2
         with:
