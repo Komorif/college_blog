@@ -1,49 +1,58 @@
 name: Deploy Quartz site to GitHub Pages
- 
+
 on:
   push:
     branches:
       - v4
- 
+
 permissions:
   contents: read
   pages: write
   id-token: write
- 
+
 concurrency:
   group: "pages"
   cancel-in-progress: false
- 
+
 jobs:
   build:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
           node-version: 18.14
-      - name: Install Dependencies
+
+      - name: Install dependencies
         run: npm ci
+
       - name: Build Quartz
         run: npx quartz build
-      - uses: actions/upload-artifact@v3
+
+      # Добавлено временно, чтобы подтянуть action и избежать ошибки
+      - name: Dummy upload to preload action (optional)
+        uses: actions/upload-artifact@v2
         with:
           name: dummy
           path: ./public/index.html
         continue-on-error: true
-      - name: Upload artifact
+
+      - name: Upload artifact for GitHub Pages
         uses: actions/upload-pages-artifact@v2
         with:
           path: public
- 
+
   deploy:
     needs: build
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
