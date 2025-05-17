@@ -2,7 +2,7 @@
 title: ИСП23А гайды
 tags:
 ---
-[[content/csharp/index|C#]]
+[[csharp/index|C#]]
 --------------
 
 Гайды на код
