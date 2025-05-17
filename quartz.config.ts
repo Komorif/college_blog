@@ -8,15 +8,15 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Komorif",
+    pageTitle: "komorif",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
-    locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    locale: "ru-RU",
+    baseUrl: "komori.jzhao.xyz",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
