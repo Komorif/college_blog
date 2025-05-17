@@ -34,7 +34,6 @@ jobs:
       - name: Build Quartz
         run: npx quartz build
 
-      # Добавлено временно, чтобы подтянуть action и избежать ошибки
       - name: Dummy upload to preload action (optional)
         uses: actions/upload-artifact@v2
         with:
