@@ -2,7 +2,7 @@
 title: ИСП23А гайды
 tags:
 ---
-[[МДК/МДК 01.01/csharp/index|CSharp]]
+[[content/МДК/МДК 01.01/csharp/index|CSharp]]
 --------------
 
 Гайды на код
