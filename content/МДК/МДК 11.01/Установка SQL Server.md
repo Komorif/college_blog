@@ -1,3 +1,4 @@
+<mark style="background: #FF5582A6;">1. Установка SQL Server и SSMS</mark>
 (1) Переходим на сайт: [https://www.microsoft.com/en-us/sql-server/sql-server-downloads], затем выбираем SQL Server 2022 Developer и устанавливаем
 
 ![[Pasted image 20250527210602.png]]
@@ -42,3 +43,42 @@
 После этого нажимаем connect
 
 ![[Pasted image 20250527213136.png]]
+
+<mark style="background: #FF5582A6;">2. Настройка сервера</mark>
+
+<mark style="background: #3B83BD;">1. Включение доступа по логину и паролю</mark>
+
+(1) Нажимаем правой кнопкой мыши по DESKTOP-.. и properties
+
+![[Pasted image 20250527213709.png]]
+
+(2) Security затем жмем SQL Server and Windows Authentication mode
+
+![[Pasted image 20250527213750.png]]
+
+(3) Соглашаемся на перезапуск SSMS, после перезагружаем локальный сервер
+
+![[Pasted image 20250527214303.png]]
+
+(4) раскрываем папку Security затем Logins после чего нажимаем правой кнопкой мыши по "sa" затем properties
+
+![[Pasted image 20250527215234.png]]
+
+(5)
+1 - Свой пароль с буквами и цифрами
+2- Политики безопасности
+
+![[Pasted image 20250527215915.png]]
+
+3 - Нажимаем Status слева
+4 - проставляем галочки как на фото
+После всего жмем ОК
+
+![[Pasted image 20250527220215.png]]
+
+(6) 
+1 - Жмем "вилку"
+2 - В Authentication выбираем SQL Server Authentication
+3 - Пишем Login: sa Password: "ваш пароль"
+
+![[Pasted image 20250527220623.png]]
