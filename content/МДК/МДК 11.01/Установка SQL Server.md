@@ -1,4 +1,5 @@
 <mark style="background: #FF5582A6;">1. Установка SQL Server и SSMS</mark>
+
 (1) Переходим на сайт: [https://www.microsoft.com/en-us/sql-server/sql-server-downloads], затем выбираем SQL Server 2022 Developer и устанавливаем
 
 ![[Pasted image 20250527210602.png]]
