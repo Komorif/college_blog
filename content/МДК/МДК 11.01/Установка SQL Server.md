@@ -47,7 +47,7 @@
 
 <mark style="background: #FF5582A6;">2. Настройка сервера</mark>
 
-<mark style="background: #3B83BD;">1. Включение доступа по логину и паролю</mark>
+<mark style="background: #3B83BD;">2.1. Включение доступа по логину и паролю</mark>
 
 (1) Нажимаем правой кнопкой мыши по DESKTOP-.. и properties
 
