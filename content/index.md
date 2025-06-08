@@ -1,5 +1,9 @@
 ---
-banner: "![[og-image.png]]"
+banner: https://zastavki.gas-kvas.com/uploads/posts/2024-09/zastavki-gas-kvas-com-8p6r-p-zastavki-na-rabochii-stol-programmista-2.jpg
+pixel-banner-flag-color: red
+banner-fade: -70
+banner-radius: 16
+content-start: 306
 ---
 
 >[!multi-column]
