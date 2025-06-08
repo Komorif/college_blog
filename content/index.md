@@ -1,8 +1,5 @@
 ---
-banner: "https://zastavki.gas-kvas.com/uploads/posts/2024-09/zastavki-gas-kvas-com-8p6r-p-zastavki-na-rabochii-stol-programmista-2.jpg"
-banner_y: 0.364
-notetoolbar: none
-dg-publish:
+banner: "![[og-image.png]]"
 ---
 
 >[!multi-column]
